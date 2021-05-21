@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Glass Calendar</title>
+
+	<link rel="stylesheet" type="text/css" href="dycalendar.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <section>
+    <div class="box">
+      <div class="container">
+        <div id="calendar"></div>
+      </div>
+    </div>
+  </section>
+
+  <script type="text/javascript" src="dycalendar.js"></script>
+  <script>
+    dycalendar.draw({
+      target: "#calendar",
+      type:'month',
+      dayformat: 'full',
+      monthformat: 'full',
+      highlighttargetdate: true,
+      prevnextbutton: 'show',
+    })
+  </script>
+</body>
+</html>
